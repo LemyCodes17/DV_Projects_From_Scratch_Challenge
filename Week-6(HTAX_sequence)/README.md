@@ -4,7 +4,7 @@ HTAX (Hierarchical Transport Architecture) is a packet-based transport protocol.
 ## 1. Sequence Item Properties
 The HTAX packet contain the following fields.
  
-1. `dest_port`: The destination port where the packet is routed to in the .
+1. dest_port: The destination port where the packet is routed to in the .
 2. vc: The Virtual channel assigned to the packet.
 3. length: The packet size.
 4. delay: Packet injection delay.
@@ -12,7 +12,7 @@ The HTAX packet contain the following fields.
 ## 2. Task:
 Design UVM sequences for the HTAX network that generate specific packet traffic patterns using sequence-level constraints. Create a base sequence `fix_dest_port_seq` should be used as the reference implementation. Implement the following sequences:
  
-1. `short_packet_seq`
+1. short_packet_seq
 Generate packets where:
 `3 <= length <= 10`
 2. `long_packet_short_delay_seq`
