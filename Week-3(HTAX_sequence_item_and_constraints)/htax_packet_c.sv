@@ -45,6 +45,7 @@ rand int dest_port;            // randomized destination port index
 
 
 constraint length_cons { 
+	data.size() == length;
     lenght >2;
     length <= 50;
     {lenght inside {[2:20]:/60, [21:40]:/35, [41:50]:/5}};
