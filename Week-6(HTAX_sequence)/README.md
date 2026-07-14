@@ -1,10 +1,10 @@
-# HTAX UVM Sequences
+# HTAX UVM Sequence
 HTAX (Hierarchical Transport Architecture) is a packet-based transport protocol. This folder generates HTAX packet transactions with different traffic patterns with specified constraints.
  
 ## 1. Sequence Item Properties
 The HTAX packet contain the following fields.
  
-1. dest_port: The destination port where the packet is routed to in the .
+1. `dest_port`: The destination port where the packet is routed to in the .
 2. vc: The Virtual channel assigned to the packet.
 3. length: The packet size.
 4. delay: Packet injection delay.
