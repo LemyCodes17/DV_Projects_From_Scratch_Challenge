@@ -11,12 +11,12 @@ The HTAX packet contains the following fields.
 5. data: The payload array carried by the packet.
 
 ## 2. Task:
-Design the `htax_packet` sequence item with the following design constraints:
+Design the htax_packet sequence item with the following design constraints:
  
-1. `delay_cons` — Delay must fall within a reasonable send window: `1 <= delay <= 20`.
-2. `dest_port_cons` — Destination port must map to a valid physical port: `dest_port inside {[0:PORTS-1]}`.
-3. `vc_cons` — Virtual channel request must be a valid, non-zero value.
-4. `length_cons` — Length must be between 3 and 50, following this distribution:
+1. `delay_cons` Delay must fall within a reasonable send window: `1 <= delay <= 20`.
+2. `dest_port_cons` Destination port must map to a valid physical port: `dest_port inside {[0:PORTS-1]}`.
+3. `vc_cons` Virtual channel request must be a valid, non-zero value.
+4. `length_cons` Length must be between 3 and 50, following this distribution:
    - 60% between 3 and 20
    - 35% between 21 and 40
    - 5% between 41 and 50
