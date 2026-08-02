@@ -6,8 +6,13 @@ function new(string name, uvm_component parent);
     super.new(name, parent);
 endfunction:constructor_func
 
-function build;
-functin run
-task;
+function void build_phase();
+endfunction:build_phase
 
-endclass
+function void connect_phase();
+endfunction:connect_phase
+
+task run_phase();
+endtask:run_phase
+
+endclass:my_component
