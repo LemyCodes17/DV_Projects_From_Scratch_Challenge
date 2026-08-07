@@ -23,12 +23,12 @@ module testbench();
     #1; // one clock-cycle ns delay
     tb_a = 2;
     tb_b = 3;
-    tb_c_in = 4;
+    tb_c_in = 0;
     
     #1; // one clock-cycle ns delay
     tb_a = 5;
     tb_b = 6;
-    tb_c_in = 7;
+    tb_c_in = 1;
     
     #1; // one clock-cycle ns delay
     tb_a = 8;
@@ -43,6 +43,3 @@ module testbench();
     end
   
 endmodule:testbench
-
-
-  
