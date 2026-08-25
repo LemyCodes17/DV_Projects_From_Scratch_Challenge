@@ -13,7 +13,6 @@ initial begin
   $display ("a = 0x%h", a); // this outputs a = 0xcafe1234
   $display ("b = %0.4f", b); // this outputs b = 0.1234 it means round up the 4th decimal place of this floating point number
   $display ("t = %0t", t); // this outputs t = 20. 0 means add 0 spacing before the value of t
-  $display("t = %5t", t); // % means insert the data type in the brackets, t, for example in place of this "% symbol". 
-                         // this oupts t =     20 and it adds 5 spaces before the val of t
+  $display("t = %5t", t); // % means insert the data type in the brackets, t, for example in place of this "% symbol". this oupts t =     20 and it adds 5 spaces before the val of t
 end
 endmodule
