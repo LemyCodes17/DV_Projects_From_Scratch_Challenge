@@ -5,4 +5,4 @@ module full_adder (a,b,c,sum,carry);
 	assign sum = a ^ b ^ c;
 	assign carry = (a & b) | (b & c) | (c & a);
   
-endmodule:full_adde
+endmodule:full_adder
